@@ -1,0 +1,130 @@
+/*      TOPMENU        */
+
+#plannerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: calc(#{$menu-width} - 2vh - 2px);
+  /* max-height: 33vh;-
+  min-height: 10vh; */
+  // min-height: calc(#{$menu-height} - 2vh - 2px);
+  min-height: 0vh;
+  max-height: 33vh;
+  background-color: $dark-grey;
+  margin-top: 1vh; 
+  border-radius: calc((1vh + 1vh));
+  border: 1px solid $purple;
+
+    form{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      width: 60vw;
+
+          #inputHolder{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+              width: 25vw;
+              float:left;
+              margin: 0;
+              padding: 0;
+            //     input{
+            //       display: flex;
+            //       justify-content: center;
+            // align-items: center;
+            //       margin: 0;
+            //     padding: 0;
+            //     }
+            }
+    }
+    h1,h3{
+      margin: auto;
+      max-width: fit-content;
+    }
+  }
+  
+  #routes {
+    width: 100%;
+  }
+  
+  #routes .textBox {
+    width: 100%;
+    height: 2.5em;
+  }
+  
+  #travelMode {
+    width: 8vw;
+    height: 2.5em;
+  }
+  
+  #locButton {
+    position: absolute;
+    margin-left: -10.5em;
+    margin-top: 0.25em;
+  }
+
+
+
+  #rightBits
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40vw;
+
+
+  }
+
+  a.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+    font-weight: 400;
+    font-size: medium;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    height: 2.5em;
+    width: 8vw;
+    margin-top: 1.5vh;
+}
+a.button:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-weight: 400;
+  font-size: medium;
+  color: white;
+  background-color: $purple;
+  border: 1px solid $purple;
+  height: 2.5em;
+  width: 8vw;
+  margin-top: 1.5vh;
+}
+
+input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+
+  margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+  color: white;
+  background-color: $purple;
+  height: 2.5em;
+  width: 6vw;
+}

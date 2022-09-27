@@ -1,0 +1,422 @@
+/*      MAINBODY        */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border: 1px solid #804f9b;
+  overflow-y: scroll;
+  background-color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#menu {
+  width: calc((100vw - 2vh - 2px) / 2 - 6vw);
+  /* max-height: 33vh;-
+    min-height: 10vh; */
+  height: auto;
+  max-height: 29vh;
+  background-color: white;
+  margin-bottom: 1vh;
+  overflow-y: scroll;
+  border: 1px solid #666666;
+  border-radius: 2px;
+}
+
+#menu2 {
+  width: calc((100vw - 2vh - 2px) / 2 - 6vw);
+  /* max-height: 33vh;-
+    min-height: 10vh; */
+  height: auto;
+  max-height: 29vh;
+  background-color: white;
+  margin-bottom: 1vh;
+  border: 1px solid #804f9b;
+  overflow-y: scroll;
+  border: 1px solid #666666;
+  border-radius: 2px;
+}
+
+#menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+#menu::-webkit-scrollbar {
+  display: none;
+}
+
+#menu2::-webkit-scrollbar {
+  display: none;
+}
+
+#map {
+  width: calc(100vw - 2vh - 2px);
+  height: 88vh;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  border-radius: calc((1vh + 1vh));
+  border: 1px solid #804f9b;
+  position: absolute;
+  z-index: 0;
+}
+
+#icon {
+  max-height: 40px;
+  max-width: 22px;
+}
+
+div #venue_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #6c757d;
+  background-color: #6c757d;
+  max-width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+div #venue_info img {
+  margin-top: calc((1vw + 1vh));
+  max-width: 350px;
+  border-radius: calc((1vh + 1vh) / 2);
+}
+
+div #venue_info h1 {
+  font-weight: 300;
+  color: white;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 1.2);
+  margin: calc((1vw + 1vh) / 2);
+}
+
+div #venue_info p {
+  font-weight: 300;
+  color: white;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+}
+
+div #venue_info #innerScroller {
+  height: 120px;
+  border: 1px solid #ccc;
+  font: 16px/26px Georgia, Garamond, Serif;
+  overflow: auto;
+}
+
+div #venue_info .innerScroller::-webkit-scrollbar {
+  display: none;
+}
+
+div h2,
+div summary {
+  font-weight: 400;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 1.2);
+  color: #666666;
+}
+
+div ul{
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+div ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: #6c757d;;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+  list-style: none;
+  /*margin-right: 2vw;*/
+  padding: 0;
+}
+
+div ul li#whiteLi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+  list-style: none;
+  margin-right: 2.5vw;
+  padding: 0;
+}
+
+a {
+  margin-bottom: calc((1vw + 1vh) / 2);
+}
+
+a:link {
+  color: white;
+  font-weight: 300;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+}
+
+a:visited {
+  color: #f1f1f1;
+  font-weight: 300;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+}
+
+a:hover {
+  color: #f1f1f1;
+  font-weight: 300;
+  background-color: transparent;
+  text-decoration: underline;
+  font-size: calc((100vw + 66.66vh / 2) / 100 * 0.75);
+}
+
+#lowdownContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: calc((100vw - 2vh - 2px));
+  position: absolute;
+  bottom: 1vh;
+  z-index: 1;
+}
+
+#megaContainer {
+  width: calc((100vw - 2vh - 2px));
+  height: 90vh;
+  position: relative;
+  margin-top: 1vh;
+}
+
+/*      TOPMENU        */
+#plannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: calc(100vw - 2vh - 2px);
+  /* max-height: 33vh;-
+  min-height: 10vh; */
+  min-height: 0vh;
+  max-height: 33vh;
+  background-color: #e3e3e3;
+  margin-top: 1vh;
+  border-radius: calc((1vh + 1vh));
+  border: 1px solid #804f9b;
+}
+
+#plannerContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 70vw;
+}
+
+#plannerContainer form #inputHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 33.5vw;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+#plannerContainer h1,
+#plannerContainer h3 {
+  margin: auto;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+#routes {
+  width: 100%;
+}
+
+#routes .textBox {
+  width: 100%;
+  height: 2.5em;
+}
+
+#travelMode {
+  width: 8vw;
+  height: 2.5em;
+}
+
+#locButton {
+  position: absolute;
+  margin-left: -10.5em;
+  margin-top: 0.25em;
+}
+
+#rightBits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-between;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 19vw;
+}
+
+a.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: medium;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  height: 2.5em;
+  width: 8vw;
+  margin-top: 1.5vh;
+}
+
+a.button:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: medium;
+  color: white;
+  background-color: #804f9b;
+  border: 1px solid #804f9b;
+  height: 2.5em;
+  width: 8vw;
+  margin-top: 1.5vh;
+}
+
+input[type="submit"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: white;
+  background-color: #804f9b;
+  height: 2.5em;
+  width: 6vw;
+}
+/*# sourceMappingURL=StylePrototype.css.map */
+
+
+#filterContainer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#filterinner
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#filterinner input[type='checkbox']
+{
+  margin-left: 0.5vw;
+}
